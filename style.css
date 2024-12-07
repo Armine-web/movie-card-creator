@@ -1,0 +1,21 @@
+.ui.card .image {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    position: relative; 
+}
+
+.ui.card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ui.blue.button {
+    background-color: #000;
+}
+
+.header {
+    text-transform: uppercase;
+}

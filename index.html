@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="movie-form" class="ui inverted segment">
+        <h1 class="ui header">Movies Card Creation</h1>
+        <div class="ui inverted form">
+            <div class="two fields">
+                <div class="field">
+                    <label>Title</label>
+                    <input id="title" placeholder="Title" type="text">
+                </div>
+                <div class="field">
+                    <label>Genre</label>
+                    <select id="genre" name="Genres">
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Musical">Musical</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Documentary">Documentary</option>
+                    </select>
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Country</label>
+                    <input id="country" placeholder="Country" type="text">
+                </div>
+                <div class="field">
+                    <label>Year</label>
+                    <input id="year" placeholder="Year" min="1960" max="2050" type="number">
+                </div>
+            </div>
+            <div class="field">
+                <label>Additional Description</label>
+                <textarea id="description" placeholder="Provide more details here..." rows="4"></textarea>
+            </div>
+            <div class="field">
+                <label>Image URL</label>
+                <input type="url" id="image-url" placeholder="Enter an image URL">
+            </div>
+            <div class="field">
+                <label>Video Link</label>
+                <input type="url" id="video-link" placeholder="Enter the video link (e.g., YouTube)">
+            </div>
+            <button type="button" class="ui submit button" id="submit-button">Submit</button>
+        </div>
+    </form>
+
+    <div id="movie-cards-container" class="ui cards"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
